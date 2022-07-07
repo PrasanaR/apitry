@@ -9,14 +9,42 @@
      <main>
         <div class="px-4 py-3 my-2 text-center">
             <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='images/Qualitest_Logo_Black.svg') }}" alt="Qualitest Logo" width="192" height="192"/>
-            <!-- <img  src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
             <h1 class="display-6 fw-bold text-primary">Qualishield</h1>            
           </div>
         <form method="post" action="{{url_for('hello')}}">
             <div class="col-md-6 mx-auto text-center">
+                <input type="checkbox" name="Information Gathering" value="IG">
+                   <label for="vehicle1"> Information Gathering</label><br>
+                   <input type="checkbox" name="Configuration and Deployment Management Testing" value="CDMT">
+                   <label for="vehicle1"> Configuration and Deployment Management Testing</label><br>
+                   <input type="checkbox" name="Identity Management Testing" value="IMT">
+                   <label for="vehicle1"> Identity Management Testing</label><br>
+                   <input type="checkbox" name="Authentication Testin" value="AT">
+                   <label for="vehicle1"> Authentication Testin</label><br> 
+                   <input type="checkbox" name="Authorization Testing" value="AT">
+                   <label for="vehicle1"> Authorization Testing</label><br> 
+                   <input type="checkbox" name="Session Management Testing" value="SMT">
+                   <label for="vehicle1"> Session Management Testing</label><br> 
+                   <input type="checkbox" name="Input Validation Testing" value="IVT">
+                   <label for="vehicle1"> Input Validation Testing</label><br> 
+                   <input type="checkbox" name="Testing for Weak Cryptography" value="TWC">
+                   <label for="vehicle1"> Testing for Weak Cryptography</label><br> 
+                   <input type="checkbox" name="Testing for Error Handling" value="TEH">
+                   <label for="vehicle1"> Testing for Error Handling</label><br>
+                   <input type="checkbox" name="Testing for Error Handling" value="BLT">
+                   <label for="vehicle1"> Business Logic Testing</label><br>
+                   <input type="checkbox" name="Testing for Error Handling" value="CST">
+                   <label for="vehicle1"> Client-side Testing</label><br> 
+
+
+                   <br>
+                     Select a File to Load:
+                     <input type="file" id="fileToLoad">
+                     <button onclick="loadFileAsText()">Load Selected File</button>
+                   <br>
+
                 <label for="name" class="form-label fw-bold fs-5">Please enter the template name : </label>
 
-                <!-- <p class="lead mb-2">Could you please tell me your name?</p> -->
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
                     <input type="text" class="form-control" id="name" name="name" style="max-width: 256px;">
                   </div>            
